@@ -39,12 +39,10 @@ cp -r jigsaw dinov3/            # the objectives import only torch, torchvision 
 ```bash
 conda create -n jigsaw python=3.10 -y && conda activate jigsaw
 pip install -r requirements.txt
-python selftest.py
+
 ```
 
-`selftest.py` needs no data and no GPU. It builds each head, runs a forward and a backward
-pass, and checks the losses start at chance: `ln(8)` for the direction task, `ln(1000)` for the
-permutation task, `1/144` accuracy for absolute position.
+
 
 ## Run
 
