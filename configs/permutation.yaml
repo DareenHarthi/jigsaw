@@ -1,0 +1,10 @@
+# 1000 fixed permutations as classes. grid/tile_patches: 12/2, 4/8 or 3/11.
+objective: permutation
+loss_weight: 0.3
+grid: 12
+tile_patches: 2
+gap_patches: 1
+n_perms: 1000
+concat_dim: 4608
+fc7_dim: 4096
+head_wd_multiplier: 0.0

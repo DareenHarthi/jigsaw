@@ -1,0 +1,21 @@
+# Boundary-centric masked modelling. Boundary tokens are forced into iBOT's mask.
+objective: boundary
+loss_weight: 1.0
+n_bins: 128
+head_dim: 512
+head_nlayers: 3
+head_hidden_dim: 2048
+stride: 2
+tau_d: 5.0
+label_sigma_bins: 1.5
+student_temp: 0.1
+readout_temp: 0.08
+readout_standardize: true
+theta_guidance_iters: 20000
+max_corners: 32
+nms_radius: 6
+max_candidates: 256
+min_votes: 2
+nfa_samples: 256
+force_mask: true
+head_wd_multiplier: 0.0

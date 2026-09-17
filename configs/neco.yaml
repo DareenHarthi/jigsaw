@@ -1,0 +1,11 @@
+# NeCo patch nearest-neighbour ordering over the crop overlap.
+objective: neco
+loss_weight: 1.0
+roi_align_kernel_size: 7
+n_refs: 49
+sort_net: bitonic
+steepness: 100.0
+proj_dim: 256
+hidden_dim: 2048
+nlayers: 3
+head_wd_multiplier: 0.0

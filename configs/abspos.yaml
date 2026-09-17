@@ -1,0 +1,16 @@
+# Absolute position with annealed target smoothing.
+objective: abspos
+loss_weight: 0.3
+grid: 12
+tile_patches: 2
+gap_patches: 1
+proj_dim: 256
+sigma_start: 1.0
+sigma_end: 0.0
+sigma_from_iter: 100000
+sigma_to_iter: 120000
+head_wd_multiplier: 0.0
+frozen_teacher: true
+it_load_teacher: 100000
+it_first_update: 101250
+update_frequency: 1250

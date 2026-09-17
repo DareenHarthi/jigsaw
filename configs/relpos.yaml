@@ -1,0 +1,16 @@
+# 8-way relative position. Tile-size ablation: set grid/tile_patches to one of
+# 18/1, 12/2, 9/3, 6/5, 4/8, 3/11 -- each spans the full 36-patch (576px) view.
+objective: relpos
+loss_weight: 0.3
+grid: 12
+tile_patches: 2
+gap_patches: 1
+block_size: 1
+proj_dim: 256
+head_hidden_dim: 512
+head_nlayers: 3
+head_wd_multiplier: 0.0
+frozen_teacher: true
+it_load_teacher: 100000
+it_first_update: 101250
+update_frequency: 1250

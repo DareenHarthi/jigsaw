@@ -1,0 +1,15 @@
+# Same cut and shuffle as relpos, but the 8-way task runs on 3x3 blocks of tiles.
+objective: relpos
+loss_weight: 0.3
+grid: 12
+tile_patches: 2
+gap_patches: 1
+block_size: 3
+proj_dim: 256
+head_hidden_dim: 512
+head_nlayers: 3
+head_wd_multiplier: 0.0
+frozen_teacher: true
+it_load_teacher: 100000
+it_first_update: 101250
+update_frequency: 1250

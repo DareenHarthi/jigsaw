@@ -1,0 +1,15 @@
+# Region prediction from an unpooled crop.
+objective: region
+loss_weight: 0.3
+grid: 12
+tile_patches: 3
+crop_tiles: 4
+block: 3
+proj_dim: 256
+aug_grayscale_p: 0.2
+aug_jitter_p: 0.8
+head_wd_multiplier: 0.0
+frozen_teacher: true
+it_load_teacher: 100000
+it_first_update: 101250
+update_frequency: 1250
